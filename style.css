@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f5f7f7;
+    margin-top: 30px;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px #000;
+}
+
+
+.logo{
+    text-align: center;
+    padding: 30px;
+}
+
+.logo img{
+    width: 20%;
+    height: 20%;
+}
+
+.inputs{
+    text-align: center;
+}
+
+.inputs input, .inputs button{
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.inputs input{
+    width: 400px;
+    margin-right: 20px;
+}
+
+.inputs button{
+    border: none;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+}
+
+.warnMessage{
+    color: red;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+.todolist li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 40px;
+    border-bottom: 1px solid gray;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.todolist li:hover{
+    background-color: rgba(137, 43, 226, 0.557);
+}
+
+.todolist li i:hover{
+    color: red;
+}
+
+.todolist li.done span{
+    text-decoration: line-through;
+}
+
+.error{
+    color: red;
+}
