@@ -1,31 +1,14 @@
 [
     {
+        "element": "Ringraziare Loris",
+        "isDone": "false"
+    },
+    {
+        "element": "Finire esercizi",
+        "isDone": "false"
+    },
+    {
         "element": "Andare in palestra",
-        "isDone": false
-    },
-
-    {
-        "element": "Finire gli esercizi",
-        "isDone": false
-    },
-
-    {
-        "element": "Giocare a tennis", 
-        "isDone": false
-    },
-
-    {
-        "element": "Portare la macchina dal meccanico",
-        "isDone": false
-    },
-
-    {
-        "element": "Bere molta acqua",
-        "isDone": false
-    },
-
-    {
-        "element": "Fare spuntino pomeridiano",
-        "isDone": false
+        "isDone": "false"
     }
 ]

@@ -18,29 +18,35 @@ createApp({
             })
         },
 
-        addTask(){
+        addTask(e){
+            e.preventDefault();
             // Nuovo oggetto da pushare
             const userTask = {
                 element: this.newTask,
                 isDone: false
             }
 
-            this.tasksList.unshift(userTask);
+            const data = {
+                todoItem : userTask
+            }
+            
+            axios.post(this.apiUrl, data, 
+            {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            }).then(res => {
+                this.tasksList = res.data;
+            })
+
+            // this.tasksList.unshift(userTask);
             console.log('this.tasksList', this.tasksList);
 
             // Oggetto che sarà inviato al server
-            // const data = {
-            //     todoItem : this.newTask
-            // }
+            
 
-
-            // axios.post(this.apiUrl, data, {
-            //     headers: {'Content Type': 'multipart/form-data'}
-            // })
-            // .then(res =>{
-            //     this.tasksList = res.data;
-            //     console.log('CACCA', this.tasksList);
-            // })
+            
+            
         }
     },
 
