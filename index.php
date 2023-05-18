@@ -31,23 +31,8 @@
 
         <div class="container">
             <ul class="todolist">
-                <li>
-                    <span>Andare in palestra</span>
-                    
-                    <i class="fa-solid fa-trash"></i>
-                </li>
-                <li>
-                    <span>Andare in palestra</span>
-                    
-                    <i class="fa-solid fa-trash"></i>
-                </li>
-                <li>
-                    <span>Andare in palestra</span>
-                    
-                    <i class="fa-solid fa-trash"></i>
-                </li>
-                <li>
-                    <span>Andare in palestra</span>
+                <li v-for="task in tasksList">
+                    <span>{{task.element}}</span>
                     
                     <i class="fa-solid fa-trash"></i>
                 </li>
